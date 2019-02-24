@@ -1,0 +1,227 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Zhenxin Fu}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{https://zhenxinfu.com/zhenxinfu.pdf}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+\setlength\parindent{0em}
+\usepackage{CJKutf8}
+
+\begin{document}
+\begin{CJK*}{UTF8}{Fandol}
+
+
+{\huge 付振新 (Zhenxin Fu)}
+
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \begin{large}Peking University\end{large}
+  \begin{itemize}
+    \itemsep=-0.02in
+      \item School of Electronics Engineering and Computer Science (EECS)
+      \item Institute of Computer Science and Technology (ICST)
+  \end{itemize}
+  
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & +86 15650708568 \\
+    Email: & fuzhenxin95@gmail.com \\
+    Github: & \href{http://www.github.com/fuzhenxin}{\tt http://www.github.com/fuzhenxin} \\
+    Homepage: & \href{https://zhenxinfu.com}{\tt https://zhenxinfu.com} \\
+  \end{tabular}
+\end{minipage}
+
+
+\section*{Personal}
+I am a first year graduate student at EECS and ICST, majoring in Computer Science and Natural Language Processing. I develop research interests in style transfer, dialog system and multi-task learning. I am also a member of the student cluster team of Peking University, knowing commonsense on popular developing tools. 
+
+
+\section*{Education}
+\begin{itemize}
+  \item \textbf{B.S. Computer Science, EECS, Peking University, 2014-2018} : Major in computer science, developing interest in network, database and parallel computing.
+  \item \textbf{M.S. Candidate. Natural Language Processing, ICST, Peking University, 2018-Present} : Major in Natural Language Processing, developing interest in style transfer, open-domain conversation.
+\end{itemize}
+
+
+\section*{Competition \& Internship}
+\begin{itemize}
+  \item \textbf{Student Cluster Competition at SC16 \& SC17, 2016 \& 2017} : I am in charge of reproducing results of a given paper on our own cluster. We are selected to contribute to a special issue of the journal, Parallel Computing, as one of the top teams from reproducibility challenge.
+  \item \textbf{Tencent Beijing 2017.4--2017.8} : Test Engineer for virtual assistants \& name entity recognition task  using sequence labeling.
+  \item \textbf{Alibaba Group 2018.8--Present} : Research Intern for Natural Languge Processing in AliMe Team.
+\end{itemize}
+
+
+\section*{Publications}
+\begin{itemize}
+
+\item \textbf{Find a Reasonable Ending for Stories: Does Logic Relation Help the Story Cloze Test?} to appear in AAAI Student Abstract and Poster Program, 2019. \\
+{\it Mingyue Shang, \textbf{Zhenxin Fu}, Hongzhi Yin, Bo Tang, Dongyan Zhao, Rui Yan} \\
+Natural language inference is used to promote story cloze test.
+
+\item \textbf{Student Cluster Competition 2017, Team Peking University: Reproducing Vectorization of the Tersoff Multi-Body Potential on the Intel Broadwell Architecture}, in Parallel Computing (Journel), 2018. \\
+{\it \textbf{Zhenxin Fu}, Lei Yang, Wenbin Hou, Zhuohan Li, Yifan Wu, Yihua Cheng, Xiaolin Wang, Yun Liang} \\
+  As the report of reproducibility challenge for the student cluster competition at SC17.
+
+\item \textbf{Learning to Converse with Noisy Data: Generation with Calibration}, in IJCAI-ECAI, 2018. \\
+  {\it Mingyue Shang, \textbf{Zhenxin Fu}, Nanyun Peng, Yansong Feng, Dongyan Zhao, Rui Yan}  \\
+  Noise training cases harm trainnig process of generation-based dialog system. So we integrate instance weight into dialog system to overcome the problem.
+
+\item \textbf{One "Ruler" for All Languages: Multi-Lingual Dialogue Evaluation with Adversarial Multi-Task Learning}, in IJCAI-ECAI, 2018. \\
+  {\it Xiaowei Tong, \textbf{Zhenxin Fu}, Mingyue Shang, Dongyan Zhao, Rui Yan} \\
+  We apply multi-task learning in dialog evaluation.
+
+\item \textbf{Style Transfer in Text: Exploration and Evaluation}, in AAAI, 2018. \\
+  {\it \textbf{Zhenxin Fu}, Xiaoye Tan, Nanyun Peng, Dongyan Zhao, Rui Yan} \\
+  We propose unsupervised sequence to sequence model to transfer text from style A to style B. For example, converting paper title to news title.
+  
+\item \textbf{ParConnect Reproducibility Report}, in Parallel Computing (Journal), 2017\\
+  {\it Lei Yang, Yilong Li, \textbf{Zhenxin Fu}, Zhuohan Li, Wenbin Hou, Haoze Wu, Xiaolin Wang, Yun Liang} \\
+  As the report of reproducibility challenge for the student cluster competition at SC16.
+\end{itemize}
+
+\bigskip
+
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+
+
+
+{\huge 付振新}
+
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \begin{large}北京大学\end{large}
+  \begin{itemize}
+    \itemsep=-0.02in
+      \item 信息科学技术学院
+      \item 计算机科学与技术研究所
+  \end{itemize}
+  
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    手机: & +86 15650708568 \\
+    电子邮件: & fuzhenxin95@gmail.com \\
+    Github: & \href{http://www.github.com/fuzhenxin}{\tt http://www.github.com/fuzhenxin} \\
+    Homepage: & \href{http://zhenxinfu.com}{\tt https://zhenxinfu.com} \\
+  \end{tabular}
+\end{minipage}
+
+
+\section*{简介}
+北京大学计算机科学技术研究所硕士一年级在读，研究方向为自然语言处理。感兴趣的研究领域包括文本风格迁移，开放域对话系统和多任务学习。同时，作为北大超算队队员，参加过SC16和SC17大学生超算比赛。
+
+
+\section*{教育经历}
+\begin{itemize}
+  \item \textbf{学士学位} 北京大学~信息科学技术学院~2014-2018 :专业为计算机科学与技术，对网络，数据库，并行计算等方向比较有兴趣.
+  \item \textbf{硕士在读} 北京大学~计算机科学技术研究所,专业为自然语言处理,对文本风格迁移，开放域对话系统比较有兴趣.
+\end{itemize}
+
+
+\section*{比赛和实习}
+\begin{itemize}
+  \item \textbf{大学生超算比赛(SC16, SC17)} : 在两次比赛中负责论文复现部分（在自有集群上复现一篇SC会议论文）。由于该项目上较高的成绩，我们受邀在期刊Parallel Computing上展示我们的复现报告。
+  \item \textbf{腾讯北京 ~ 2017.4--2017.8} : 智能助手测试， 命名实体识别.
+  \item \textbf{阿里巴巴 ~ 2018.8--Now} : 阿里小蜜团队,研究型实习生.
+\end{itemize}
+
+
+\section*{论文}
+
+\begin{itemize}
+
+\item \textbf{Find a Reasonable Ending for Stories: Does Logic Relation Help the Story Cloze Test?} to appear in AAAI Student Abstract and Poster Program, 2019. \\
+{\it Mingyue Shang, \textbf{Zhenxin Fu}, Hongzhi Yin, Bo Tang, Dongyan Zhao, Rui Yan} \\
+利用自然语言推理辅助故事结尾预测任务。
+
+\item \textbf{Student Cluster Competition 2017, Team Peking University: Reproducing Vectorization of the Tersoff Multi-Body Potential on the Intel Broadwell Architecture}, in Parallel Computing (Journel), 2018. \\
+{\it \textbf{Zhenxin Fu}, Lei Yang, Wenbin Hou, Zhuohan Li, Yifan Wu, Yihua Cheng, Xiaolin Wang, Yun Liang} \\
+为SC17大学生超算比赛的论文复现报告。
+
+\item \textbf{Learning to Converse with Noisy Data: Generation with Calibration}, in IJCAI-ECAI, 2018. \\
+  {\it Mingyue Shang, \textbf{Zhenxin Fu}, Nanyun Peng, Yansong Feng, Dongyan Zhao, Rui Yan}  \\
+  对话数据含有大量的噪声，数据质量对模型效果有较大影响。本文提出将Instance Weight应用到对话生成，使不同质量的数据样本对模型更新有不同影响。
+
+\item \textbf{One "Ruler" for All Languages: Multi-Lingual Dialogue Evaluation with Adversarial Multi-Task Learning}, in IJCAI-ECAI, 2018. \\
+  {\it Xiaowei Tong, \textbf{Zhenxin Fu}, Mingyue Shang, Dongyan Zhao, Rui Yan}  \\
+  将Multi-task思想引入到对话评测当中，不同语言之间互相促进。
+
+\item \textbf{Style Transfer in Text: Exploration and Evaluation}, in AAAI, 2018. \\
+  {\it \textbf{Zhenxin Fu}, Xiaoye Tan, Nanyun Peng, Dongyan Zhao, Rui Yan} \\
+  本文提出一种无监督的序列到序列模型，将一句话从一种风格转换为另一种风格。并且提出了两个评价指标作为对该研究方向的促进。
+  
+\item \textbf{ParConnect Reproducibility Report}, in Parallel Computing (Journal), 2017\\
+  {\it Lei Yang, Yilong Li, \textbf{Zhenxin Fu}, Zhuohan Li, Wenbin Hou, Haoze Wu, Xiaolin Wang, Yun Liang} \\
+  为SC16大学生超算比赛的论文复现报告。
+\end{itemize}
+
+
+% Footer
+%\begin{center}
+%  \begin{footnotesize}
+%    Last updated: \today \\
+%    %\href{\footerlink}{\texttt{\footerlink}}
+%  \end{footnotesize}
+%\end{center}
+
+
+
+\end{CJK*}
+\end{document}
