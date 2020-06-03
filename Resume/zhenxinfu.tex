@@ -24,18 +24,39 @@
 
 %\usepackage{CJKutf8}
 
+% \usepackage{mathspec}
+% \setmathsfont{Times New Roman}
+% \setmainfont{Times New Roman}
 \usepackage[UTF8]{ctex}
+
 \usepackage{url}
+\usepackage{graphicx}
+
 
 \usepackage[left=0.7in,top=0.6in,right=0.7in,bottom=0.6in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{付振新(Zhenxin Fu)}
+\name{付振新}
 \address{15650708568 \\ fuzhenxin95@gmail.com \\ \url{https://zhenxinfu.com}}
 \address{Github: \url{http://www.github.com/fuzhenxin}}
 
 
+\usepackage{tikz}
+\usepackage{graphicx}
+\usetikzlibrary{calc}
+
+
+
 \begin{document}
+
+
+
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=south west,inner sep=0pt] at ($(current page.north east)-(4cm,4.2cm)$) {
+       \includegraphics[width=0.12\columnwidth]{fzx.jpg}
+    };
+\end{tikzpicture}
+\vspace{-9mm}
 
 
 % \begin{rSection}{Education}
@@ -117,12 +138,16 @@
 % \end{rSection}
 
 
+\begin{rSection}{简介}
+    付振新，男，天津人，计算机方向，本科和硕士均就读于北京大学。自大学三年级开始进行自然语言处理方向的研究，主要研究方向为对话系统和文本风格迁移，研究成果发表在KDD，AAAI，SIGIR，IJCAI，EMNLP，CIKM，NLPCC等相关会议上。同时还参加了北京大学超算队，多次参加国际大学生超算比赛，对高性能计算的基础知识有部分了解，自2018年开始担任北京大学超算队的教练。
+\end{rSection}
+
 
 
 \begin{rSection}{教育经历}
 
     {\bf 北京大学王选计算机研究所(原北京大学计算机科学技术研究所)} \hfill {\em 2018年9月 - 目前} 
-    \\ 硕士：自然语言处理 \\
+    \\ 硕士：计算机应用技术，自然语言处理 \\
     {\bf 北京大学信息科学技术学院} \hfill {\em 2014年9月 - 2018年7月}
     \\ 学士：计算机科学与技术
  
@@ -131,16 +156,16 @@
 
 \begin{rSection}{竞赛和实习经历}
     \textbf{大学生超算竞赛(SC16, SC17, ASC19, \& SC19)} \hfill {\em 2016年9月 - 目前}\\
-    负责在自建集群上复现一篇高性能计算论文。由于我们的较好表现，受邀在ParallelComputing期刊上展示我们的复现报告。在SC16获团体第六名，在SC17获团体第四名。并带队参加了ASC19和SC19，并在ASC19获一等奖。 \\
+    负责在自建集群上复现一篇高性能计算论文。由于我们的较好表现，受邀在ParallelComputing期刊上展示我们的复现报告。在SC16世界大学生超算比赛获团体第六名，在SC17获团体第四名。并作为教练带队参加了ASC19和SC19，并在ASC19获一等奖。 \\
     \textbf{腾讯} \hfill {\em 2017年4月 - 2017年8月} \\
     智能助手测试实习生，进行智能助手的测试和命名实体识别工作。\\
     \textbf{阿里巴巴} \hfill {\em 2018年8月 - 目前}\\
-    阿里巴巴达摩院阿里小蜜团队研究型实习生。
+    阿里巴巴达摩院阿里小蜜团队研究型实习生，实习期间发表一篇KDD长文，一篇CIKM短文。
 \end{rSection}
 
 \begin{rSection}{论文}
     
-    [1] \textbf{Style Transfer in Text: Exploration and Evaluation}, AAAI, 2018. \textbf{Citation>100}\\
+    [1] \textbf{Style Transfer in Text: Exploration and Evaluation}, AAAI, 2018. \textbf{引用数136}.\\
     {\it \textbf{Zhenxin Fu}, Xiaoye Tan, Nanyun Peng, Dongyan Zhao, Rui Yan.}
   
     [2] \textbf{Context-to-Session Matching: Utilizing Whole Session for Response Selection in Information-Seeking Dialogue Systems}, KDD, 2020. \\
@@ -149,8 +174,8 @@
     [3] \textbf{Query-bag Matching with Mutual Coverage for Information-seeking Conversations in E-commerce}, CIKM (Short), 2019. \\
     {\it \textbf{Zhenxin Fu}, Feng Ji, Wenpeng Hu, Wei Zhou, Dongyan Zhao, Haiqing Chen, Rui Yan.}
 
-    [4] \textbf{Be Aware of the Hot Zone: A Warning System of Hazard Area Prediction to Intervene Novel Coronavirus COVID-19 Outbreak}, SIGIR Industry Track, 2020. \\
-    {\it \textbf{Zhenxin Fu}, Yu Wu, Hailei Zhang, Yichuan Hu, Dongyan Zhao, Rui Yan..}
+    [4] \textbf{Be Aware of the Hot Zone: A Warning System of Hazard Area Prediction to Intervene Novel Coronavirus COVID-19 Outbreak}, SIGIR Industry Track, 10 pages, 2020. \\
+    {\it \textbf{Zhenxin Fu}$^*$, Yu Wu$^*$, Hailei Zhang, Yichuan Hu, Dongyan Zhao, Rui Yan..}
 
     [5] \textbf{Student Cluster Competition 2017, Team Peking University: Reproducing Vectorization of the Tersoff Multi-Body Potential on the Intel Broadwell Architecture}, Parallel Computing (Journel), 2018. \\
     {\it \textbf{Zhenxin Fu}, Lei Yang, Wenbin Hou, Zhuohan Li, Yifan Wu, Yihua Cheng, Xiaolin Wang, Yun Liang.}
@@ -186,7 +211,8 @@
     \textbf{审稿人}: AAAI-2019; ACL-2019; EMNLP-2019; INLG-2019; AAAI-2020, ACL-2020. \\
     \textbf{助教}: 自然语言处理导论:基础，理论与应用, 2019年春季学期. \\
     \textbf{奖学金}: [1] 王选奖学金，一等奖, 2018年; [2] 专项奖学金 (7/32), 北京大学, 2019年. \\
-    \textbf{Github}: 文本风格迁移列表。Github中Star数超过700. \\链接: \url{https://github.com/fuzhenxin/Style-Transfer-in-Text}
+    \textbf{奖励}: [1] 北京大学``赛帕斯''杯程序设计竞赛, 三等奖, 2016年; [2] 优秀科研奖，北京大学, 2019年. \\
+    \textbf{Github}: 文本风格迁移列表。Github中Star数765. \\链接: \url{https://github.com/fuzhenxin/Style-Transfer-in-Text}
 \end{rSection}
 
 
