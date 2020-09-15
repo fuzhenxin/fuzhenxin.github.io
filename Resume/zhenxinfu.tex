@@ -137,10 +137,11 @@
 
 % \end{rSection}
 
-\begin{rSection}{简介}
-    付振新，天津人，本科和硕士均就读于北京大学，研究方向为自然语言处理。自大学三年级开始进行自然语言处理方向的研究，主要研究方向为文本生成和文本匹配，包括生成式对话系统、文本风格迁移，和检索式对话系统，研究成果发表在KDD，AAAI，SIGIR，IJCAI，EMNLP，CIKM，NLPCC等相关会议上。
-    本科期间加入北京大学超算队，多次参加国际大学生超算比赛，对高性能计算的基础知识有部分了解，研究生期间担任北京大学超算队的教练。
-\end{rSection}
+% \begin{rSection}{简介}
+%     付振新，天津人，本科和硕士均就读于北京大学，\\
+%     \textbf{研究方向}: 自然语言处理, 主要研究方向为文本生成和文本匹配，包括生成式对话系统、文本风格迁移，和检索式对话系统，研究成果发表在KDD，AAAI，SIGIR，IJCAI，EMNLP，CIKM，NLPCC等相关会议上。
+
+% \end{rSection}
 
 \begin{rSection}{教育经历}
 
@@ -152,32 +153,49 @@
 
 \begin{rSection}{竞赛和实习经历}
     \textbf{大学生超算竞赛(SC16, SC17, ASC19, \& SC19)} \hfill {\em 2016年9月 - 目前}\\
-    本科期间负责复现高性能计算论文子任务，研究生期间作为教练带队参加比赛。在SC16世界大学生超算比赛获团体第六名，在SC17获团体第四名。作为教练带队参加了ASC19和SC19，并在ASC19获一等奖。 \\
+    本科期间负责复现高性能计算论文子任务，在SC16、SC17世界大学生超算比赛分别获团体第六、第四名。
+    研究生期间作为教练组织日常训练，带队参加比赛。带队参加了ASC19和SC19，并在ASC19获一等奖。 \\
     \textbf{腾讯} \hfill {\em 2017年4月 - 2017年8月} \\
     智能助手的测试\&负责一个车载语音导航项目的地名识别工作（命名实体识别）。\\
     \textbf{阿里巴巴} \hfill {\em 2018年8月 - 2020年6月}\\
     达摩院阿里小蜜团队研究型实习生，实习期间主要做检索式对话系统的研究工作，共发表三篇论文。
 \end{rSection}
 
+\begin{rSection}{研究方向：自然语言处理}
+    \textbf{文本生成：}文本风格迁移(AAAI2018,EMNLP2019)，生成式对话系统(IJCAI2018,IJCAI2018,NLPCC2019) \\
+    \textbf{文本匹配：}检索式对话系统(CIKM2019,KDD2020,CIKM2020)，故事结尾预测(AAAI2019Abstract)，词义消歧(AAAI2020Abstract)
+\end{rSection}
+
 \begin{rSection}{论文(三篇CCF-A类一作（含一篇共同一作），三篇CCF-B类一作（含一篇短文）)}
-    
+    % \textbf{研究方向：自然语言处理}
+    % \begin{itemize}
+    %     \item 文本生成：文本风格迁移，生成式对话系统
+    %     \item 文本匹配：检索式对话系统
+    % \end{itemize}
+
     [1] \textbf{Style Transfer in Text: Exploration and Evaluation}, AAAI, 2018. \textbf{引用数195}.\\
-    {\it \textbf{Zhenxin Fu}, Xiaoye Tan, Nanyun Peng, Dongyan Zhao, Rui Yan.}
+    {\it \textbf{Zhenxin Fu}, Xiaoye Tan, Nanyun Peng, Dongyan Zhao, Rui Yan.} \\
+    较早的提出无监督场景下的文本风格迁移模型并提出评价指标。
   
     [2] \textbf{Context-to-Session Matching: Utilizing Whole Session for Response Selection in Information-Seeking Dialogue Systems}, KDD, 2020. \\
-    {\it \textbf{Zhenxin Fu}, Shaobo Cui, Mingyue Shang, Feng Ji, Dongyan Zhao, Haiqing Chen, Rui Yan.}
+    {\it \textbf{Zhenxin Fu}, Shaobo Cui, Mingyue Shang, Feng Ji, Dongyan Zhao, Haiqing Chen, Rui Yan.} \\
+    讲问题-问题匹配和问题-答案匹配这两个客服类对话中的关键点结合在一起，模型上提出多句-多句匹配模型。
 
     [3] \textbf{Query-to-Session Matching: Do NOT Forget History and Future during Response Selection for Multi-Turn Dialogue Systems}, CIKM, 2020. \\
-    {\it \textbf{Zhenxin Fu}, Shaobo Cui, Feng Ji, Ji Zhang, Haiqing Chen, Dongyan Zhao, Rui Yan.}
+    {\it \textbf{Zhenxin Fu}, Shaobo Cui, Feng Ji, Ji Zhang, Haiqing Chen, Dongyan Zhao, Rui Yan.}\\
+    综合考虑了检索式对话中，候选回复以及它的前文和后文，模型上建模了对话中的对话流关系。
     
     [4] \textbf{Query-bag Matching with Mutual Coverage for Information-seeking Conversations in E-commerce}, CIKM (Short), 2019. \\
-    {\it \textbf{Zhenxin Fu}, Feng Ji, Wenpeng Hu, Wei Zhou, Dongyan Zhao, Haiqing Chen, Rui Yan.}
+    {\it \textbf{Zhenxin Fu}, Feng Ji, Wenpeng Hu, Wei Zhou, Dongyan Zhao, Haiqing Chen, Rui Yan.}\\
+    在问题-问题匹配的场景下，将候选问题扩展为包括该问题不同表述的问题包，模型上提出互相覆盖模型。
 
     [5] \textbf{Be Aware of the Hot Zone: A Warning System of Hazard Area Prediction to Intervene Novel Coronavirus COVID-19 Outbreak}, SIGIR Industry Track, 10 pages, 2020. \\
-    {\it \textbf{Zhenxin Fu}$^*$, Yu Wu$^*$, Hailei Zhang, Yichuan Hu, Dongyan Zhao, Rui Yan..}
+    {\it \textbf{Zhenxin Fu}$^*$, Yu Wu$^*$, Hailei Zhang, Yichuan Hu, Dongyan Zhao, Rui Yan..}\\
+    利用新冠肺炎公布确诊病例地点时间数据，进行任意地点的危险程度预测。
 
     [6] \textbf{Student Cluster Competition 2017, Team Peking University: Reproducing Vectorization of the Tersoff Multi-Body Potential on the Intel Broadwell Architecture}, Parallel Computing (Journal), 2018. \\
-    {\it \textbf{Zhenxin Fu}, Lei Yang, Wenbin Hou, Zhuohan Li, Yifan Wu, Yihua Cheng, Xiaolin Wang, Yun Liang.}
+    {\it \textbf{Zhenxin Fu}, Lei Yang, Wenbin Hou, Zhuohan Li, Yifan Wu, Yihua Cheng, Xiaolin Wang, Yun Liang.} \\
+    SC2017大学生超算比赛的论文复现报告，受邀投稿该期刊。
 
     [7] \textbf{Learning Sense Representation from Word Representation for Unsupervised Word Sense Disambiguation}, AAAI Student Abstract and Poster Program, 2020. \\
     {\it Jie Wang, \textbf{Zhenxin Fu}, Moxin Li, Haisong Zhang, Dongyan Zhao, Rui Yan.}
@@ -206,8 +224,7 @@
 
 \begin{rSection}{其他}
     \textbf{技能}: Python, C++, Java, 按技能熟练程度排序. \\
-    \textbf{审稿人}: AAAI-2019; ACL-2019; EMNLP-2019; INLG-2019; AAAI-2020; ACL-2020; EMNLP-2020; COLING-2020. \\
-    \textbf{助教}: 自然语言处理导论:基础，理论与应用, 2019年春季学期. \\
+    \textbf{审稿人}: AAAI-2019/2020; ACL-2019/2020; EMNLP-2019/2020; INLG-2019; COLING-2020. \\
     \textbf{奖学金}: [1] 王选奖学金，一等奖, 2018年; [2] 专项奖学金 (7/32), 北京大学, 2019年. \\
     \textbf{奖励}: [1] 北京大学``赛帕斯''杯程序设计竞赛, 三等奖, 2016年; [2] 优秀科研奖，北京大学, 2019年. \\
     \textbf{GitHub}: 文本风格迁移列表。GitHub中Star数850. \\链接: \url{https://github.com/fuzhenxin/Style-Transfer-in-Text}
